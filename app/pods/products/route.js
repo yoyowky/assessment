@@ -4,7 +4,7 @@ import sampleData from 'assessment-frontend/models/fixtures/sample-data';
 // import { computed } from '@ember/object';
 
 export default Route.extend({
-  model() {
+  model(param){
     return EmberObject.create({
       products: [
         this.store.createRecord('product', {
